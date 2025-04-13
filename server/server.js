@@ -6,7 +6,7 @@ import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import Note from './models/Note.js'; // Import your Note model
 import multer from 'multer';
-
+import converterRoutes from './routes/UnitConverter/converter.js'; // Import your converter routes
 // Load environment variables
 dotenv.config();
 
@@ -20,17 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 
-// Optional route
-app.post('/api/notes', async (req, res) => {
-  try {
-    const { title, content } = req.body;
-    const newNote = new Note({ title, content });
-    const savedNote = await newNote.save();
-    res.status(201).json(savedNote);
-  } catch (err) {
-    res.status(500).json({ error: 'Failed to create note' });
-  }
-});
+app.use('/api/converter', converterRoutes);
 
 
 // MongoDB connection and server start
