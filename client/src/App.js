@@ -22,6 +22,7 @@ import './footer.css';
 import './main-page.css';
 import SmartUnitConverter from './Screens/UnitConverter/SmartUnitConverter';
 
+
 const App = () => {
   const [activeTab, setActiveTab] = useState('home');
 
@@ -224,6 +225,7 @@ const HomePage = ({ setActiveTab }) => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };
