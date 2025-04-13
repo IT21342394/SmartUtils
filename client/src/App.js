@@ -1,26 +1,10 @@
-// import React from 'react';
-// import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom'
-// import SmartUnitConverter from './Screens/UnitConverter/SmartUnitConverter';
-// function App() {
-//   return (
-//     <div>
-//       <BrowserRouter>
-//         <Routes>
-//         <Route path="/" element={<SmartUnitConverter/>} />
-//         </Routes>
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
 
-// export default App;
-
-// App.js
 import React, { useState } from 'react';
 import './header.css';
 import './footer.css';
 import './main-page.css';
 import SmartUnitConverter from './Screens/UnitConverter/SmartUnitConverter';
+import AdvancedBMICalculator from './Screens/BMICalculator/AdvancedBMICalculator';
 
 
 const App = () => {
@@ -30,7 +14,7 @@ const App = () => {
   const renderContent = () => {
     switch (activeTab) {
       case 'bmi':
-        return <SmartUnitConverter />;
+        return <AdvancedBMICalculator />;
       case 'converter':
         return <SmartUnitConverter />;
       case 'interest':
