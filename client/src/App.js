@@ -1,10 +1,14 @@
 import React from 'react';
-
+import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom'
+import SmartUnitConverter from './Screens/UnitConverter/SmartUnitConverter';
 function App() {
   return (
     <div>
-      <h1>Welcome to SmartUtils</h1>
-      <p>Mini Tools Hub (MERN Stack)</p>
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<SmartUnitConverter/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
