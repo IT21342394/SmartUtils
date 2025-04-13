@@ -1,0 +1,227 @@
+.converter-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+
+  }
+  
+  .converter-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 24px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 8px;
+  }
+  
+  .form-select, .form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .form-select:focus, .form-input:focus {
+    border-color: #061a47;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  }
+  
+  .btn {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    background-color: #061a47;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .unit-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .unit-col {
+    flex: 1;
+  }
+  
+  .swap-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 24px;
+    color: #2563eb;
+  }
+  
+  .swap-button:hover {
+    background-color: #f3f4f6;
+    border-radius: 50%;
+  }
+  
+  .result-box {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+  }
+  
+  .result-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #374151;
+  }
+  
+  .result-unit {
+    color: #6b7280;
+  }
+  
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+  }
+  
+  .error-box {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .recent-section {
+    margin-top: 32px;
+  }
+  
+  .recent-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 12px;
+  }
+  
+  .recent-item {
+    padding: 12px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .use-again-button {
+    background-color: transparent;
+    color: #2563eb;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .use-again-button:hover {
+    text-decoration: underline;
+  }
+  
+  .spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+  }
+
+  .recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  
+  .filter-controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .filter-select {
+    padding: 6px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  
+  .clear-filters-button {
+    padding: 6px 10px;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .clear-filters-button:hover {
+    background-color: #d1d5db;
+  }
+  
+  .no-results {
+    padding: 16px;
+    text-align: center;
+    background-color: #f9fafb;
+    border: 1px dashed #e5e7eb;
+    border-radius: 8px;
+    color: #6b7280;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
