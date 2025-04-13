@@ -1,0 +1,124 @@
+/* main-page.css */
+
+.main-content {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Homepage Specific Styles */
+  .homepage-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .homepage-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937; /* gray-800 */
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .homepage-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .homepage-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563; /* gray-600 */
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+  
+  .tools-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .tools-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .tools-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .tool-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tool-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .tool-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .tool-icon.bmi {
+    color: #3b82f6; /* blue-500 */
+  }
+  
+  .tool-icon.converter {
+    color: #10b981; /* green-500 */
+  }
+  
+  .tool-icon.interest {
+    color: #8b5cf6; /* purple-500 */
+  }
+  
+  .tool-icon.password {
+    color: #ef4444; /* red-500 */
+  }
+  
+  .tool-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .tool-description {
+    color: #4b5563; /* gray-600 */
+    margin-bottom: 1rem;
+  }
+  
+  .tool-button {
+    margin-top: auto;
+    background-color: #061a47; /* blue-600 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border-color: #061a47;
+    transition: background-color 0.2s;
+  }
+  
+  .tool-button:hover {
+    background-color: #014dff; /* blue-700 */
+  }
+  
+  /* App Layout */
+  .app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9fafb; /* gray-50 */
+  }
