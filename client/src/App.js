@@ -5,6 +5,7 @@ import './footer.css';
 import './main-page.css';
 import SmartUnitConverter from './Screens/UnitConverter/SmartUnitConverter';
 import AdvancedBMICalculator from './Screens/BMICalculator/AdvancedBMICalculator';
+import AdvancedPasswordGenerator from './Screens/PasswordGenerator/AdvancedPasswordGenerator';
 
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
       case 'interest':
         return <SmartUnitConverter />;
       case 'password':
-        return <SmartUnitConverter />;
+        return <AdvancedPasswordGenerator/>;
       default:
         return <HomePage setActiveTab={setActiveTab} />;
     }
