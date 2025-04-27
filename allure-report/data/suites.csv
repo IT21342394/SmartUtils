@@ -1,4 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+
 "","1120","17. Should navigate back to homepage and return to converter","","Sun Apr 27 19:31:36 IST 2025","passed","Sun Apr 27 19:31:37 IST 2025","Unit Converter Tests","smart-unit-converter.spec.js","",""
 "","1079","13. Should validate input and show error for empty value","","Sun Apr 27 19:31:32 IST 2025","passed","Sun Apr 27 19:31:33 IST 2025","Unit Converter Tests","smart-unit-converter.spec.js","",""
 "","1109","10. Should show history after calculation","","Sun Apr 27 19:47:47 IST 2025","passed","Sun Apr 27 19:47:48 IST 2025","BMI Calculator Tests","BMI.spec.js","",""
@@ -33,3 +34,4 @@
 "","1736","has title","","Sun Apr 27 19:31:14 IST 2025","passed","Sun Apr 27 19:31:15 IST 2025","","example.spec.js","",""
 "","1231","14. Should reset filters in history section","","Sun Apr 27 19:31:33 IST 2025","passed","Sun Apr 27 19:31:34 IST 2025","Unit Converter Tests","smart-unit-converter.spec.js","",""
 "","1261","15. Should perform conversion when Enter key is pressed","","Sun Apr 27 19:31:34 IST 2025","passed","Sun Apr 27 19:31:35 IST 2025","Unit Converter Tests","smart-unit-converter.spec.js","",""
+
