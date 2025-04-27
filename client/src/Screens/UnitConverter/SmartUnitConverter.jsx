@@ -60,6 +60,10 @@ function SmartUnitConverter() {
       setError('Please enter a value');
       return;
     }
+    if (parseFloat(inputValue) <= 0) {   
+      setError('Please enter a positive value greater than zero');
+      return;
+    }
     
     try {
       setLoading(true);
