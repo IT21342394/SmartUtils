@@ -6,7 +6,7 @@ import './main-page.css';
 import SmartUnitConverter from './Screens/UnitConverter/SmartUnitConverter';
 import AdvancedBMICalculator from './Screens/BMICalculator/AdvancedBMICalculator';
 import AdvancedPasswordGenerator from './Screens/PasswordGenerator/AdvancedPasswordGenerator';
-
+import InterestCalculator from './Screens/SimpleInterest/InterestCalculator';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('home');
@@ -19,7 +19,7 @@ const App = () => {
       case 'converter':
         return <SmartUnitConverter />;
       case 'interest':
-        return <SmartUnitConverter />;
+        return <InterestCalculator />;
       case 'password':
         return <AdvancedPasswordGenerator/>;
       default:
